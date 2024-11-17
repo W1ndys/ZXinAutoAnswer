@@ -1,0 +1,109 @@
+{
+    "code": 2000,
+    "data": {
+        "roles": [
+            "stu"
+        ],
+        "isConnect": false,
+        "_id": "63185998fa845f1bd09e21e6",
+        "college": {
+            "_id": "60f4e0e0444fd518df90f200",
+            "name": "网络空间安全学院",
+            "currTerm": "6687b29df92bd60018b65f36"
+        },
+        "username": "2022416246",
+        "nickname": "吴硕",
+        "userType": "student",
+        "sex": "男",
+        "createdAt": "2022-09-07T08:43:04.507Z",
+        "updatedAt": "2024-09-02T02:17:10.156Z",
+        "__v": 0,
+        "email": "w2769731875@qq.com",
+        "passwordStrength": true,
+        "qq": "2769731875",
+        "avatar": "https://cyberdownload.anrunlu.net/6aa7189f-4930-4559-a7be-33f615e95dff.png",
+        "currTerm": "6687b29df92bd60018b65f36",
+        "location": {
+            "_id": "64f40d099fd33b00133ab137",
+            "addr": "曲阜师范大学,(山东省济宁市曲阜市静轩西路57号)",
+            "city": "济宁市",
+            "district": "曲阜市",
+            "location": {
+                "type": "Point",
+                "coordinates": [
+                    116.95961859809027,
+                    35.59819634331597
+                ]
+            }
+        },
+        "dormitory": {
+            "_id": "650ff361fdc1000019841bb7",
+            "bname": "西区4号楼"
+        },
+        "teacher": [],
+        "student": [
+            {
+                "joinedClassrooms": [
+                    {
+                        "_id": "63185990fa845f1bd09e2140",
+                        "college": "60f4e0e0444fd518df90f200",
+                        "creator": "60f4e184507ff40aea0936e8",
+                        "name": "22网安",
+                        "type": "origin",
+                        "createdAt": "2022-09-07T08:42:56.145Z",
+                        "updatedAt": "2022-09-07T08:42:56.145Z",
+                        "__v": 0,
+                        "id": "63185990fa845f1bd09e2140"
+                    },
+                    "6347c425975001f827ef3537",
+                    "638aaa476151cd65d823e806",
+                    "63ef89abde8a08bd0f92cd43",
+                    "63f76d77de8a08bd0f92cf3a",
+                    "63fc9cd4dcdd495f1df4ed73",
+                    "6404b68edcdd495f1df4ee81",
+                    "6404b723dcdd495f1df4ee82",
+                    "6406daccdcdd495f1df4ee9b",
+                    "64eaf2a7e247d3001e87c47e",
+                    "64eb3312f0af27001ee9ccdb",
+                    "64eff48e5ebc1d001e693e1d",
+                    "6507b178bdea220020782b16",
+                    "65092fc1bdea220020782bda",
+                    "654367c224b3470023f0fb5f",
+                    "654368aa24b3470023f0fb66",
+                    "654b244c71ab5e001ac387e3",
+                    "654b246171ab5e001ac387e4",
+                    "65e034a7dd937e001d88801f",
+                    "65e2e0d9a0b6d8001ecc95af",
+                    "65f39dbce6c4b5001df70a38",
+                    "65f39de6e6c4b5001df70a39",
+                    "664b067a1ad677001e3e9a4b",
+                    "664b07121ad677001e3e9a50",
+                    "664beecf1ad677001e3e9bd5",
+                    "664bf0211ad677001e3e9bdd",
+                    "668f239c70b3ec001e7ca94b",
+                    "6694ca0c70b3ec001e7caaaa",
+                    "6694ca4d70b3ec001e7caaab",
+                    "66c92e5670b3ec001e7cab40",
+                    "66ce4ffe70b3ec001e7cab8d",
+                    "66d03b1b70b3ec001e7cabb7",
+                    "66d3cb8470b3ec001e7cabd9",
+                    "66d51b2570b3ec001e7cac05",
+                    "66d7cf3770b3ec001e7cac71",
+                    "66f2586370b3ec001e7cb4f7",
+                    "66f35d5770b3ec001e7cb54d",
+                    "6715f28f70b3ec001e7cbd73"
+                ],
+                "_id": "63185998fa845f1bd09e21e8",
+                "user": "63185998fa845f1bd09e21e6",
+                "grade": "2022",
+                "createdAt": "2022-09-07T08:43:04.601Z",
+                "updatedAt": "2024-10-21T06:19:59.100Z",
+                "__v": 21,
+                "isSigned": "2024-09-24T06:12:51.327Z"
+            }
+        ],
+        "id": "63185998fa845f1bd09e21e6",
+        "belongTo": "22网安"
+    },
+    "msg": "获取成功"
+}

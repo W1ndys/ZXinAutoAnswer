@@ -1,0 +1,23 @@
+POST /stu/question/answerForQuestion HTTP/1.1
+Host: v2.api.z-xin.net
+Content-Length: 154
+Sec-Ch-Ua: "Not;A=Brand";v="24",
+"Chromium";v="128"
+X-App-Version: 2.1.4
+Accept-Language: zh-CN,zh;q=0.9
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.NjMxODU5OThmYTg0NWYxYmQwOWUyMWU2.kHvK32fHIgR1hdgNvvQzYHIShE_kgif8dTfc683NnKE
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.120 Safari/537.36
+Content-Type: application/json
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua-Platform: "Windows"
+Origin: https://stu.z-xin.net
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://stu.z-xin.net/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+Connection: keep-alive
+
+{"question_id":"614838882a102f9339d24d71","homework_id":"67315a31d2058e001e8fdf9e","questionSet_id":"6371fd4e9ccdff1242d98934","stuAnswer":[{"mark":"B"},{"mark":"C"}]}
