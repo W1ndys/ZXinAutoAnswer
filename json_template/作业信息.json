@@ -15,7 +15,7 @@
                             "635395de06d667f8a89ced6e"
                         ],
                         "_id": "6191135703c68501f61d439b",
-                        "content": "动态规划算法中，最优子结构的性质是指         ",
+                        "content": "动态规划算法中，最优子结构的性质是指",
                         "difficulty": 0,
                         "type": "单选",
                         "creator": {
@@ -37,11 +37,11 @@
                         "answer": [
                             {
                                 "mark": "A",
-                                "content": "\n问题的最优解等于子问题的最优解"
+                                "content": "问题的最优解等于子问题的最优解"
                             },
                             {
                                 "mark": "B",
-                                "content": "问题的最优解可以由子问题的最优解组合而成，子问题可以独立求解  "
+                                "content": "问题的最优解可以由子问题的最优解组合而成，子问题可以独立求解"
                             },
                             {
                                 "mark": "C",
@@ -52,18 +52,33 @@
                                 "content": "问题的最优解不影响子问题的最优解，问题的最优解等于子问题的最优解"
                             }
                         ],
-                        "expAbilities": [],
-                        "__v": 1,
                         "studentQA": [
                             {
                                 "stuAnswer": [
-                                    {
-                                        "mark": "B"
-                                    }
+                                    [
+                                        {
+                                            "mark": "A"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "mark": "B"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "mark": "C"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "mark": "D"
+                                        }
+                                    ]
                                 ],
                                 "_id": "67355fc04cbf7d0020ec7b5b",
                                 "question": "6191135703c68501f61d439b",
-                                "updatedAt": "2024-11-14T14:30:26.638Z",
+                                "updatedAt": "2024-11-15T15:25:25.710Z",
                                 "score": 0
                             }
                         ]
@@ -71,7 +86,6 @@
                     {
                         "knowledges": [],
                         "_id": "634d0ae3b2e875c571062045",
-                        "title": "",
                         "content": "设有四个矩阵A,B,C,D，相邻两个矩阵之间是可乘的，它们按照ABCD的顺序进行矩阵连乘，通过不同的加括号的方式可以确定（ ）种不同的运算顺序。",
                         "difficulty": 1,
                         "type": "单选",
@@ -88,9 +102,6 @@
                         "groupName": 0,
                         "question_id": "634d0ae3b2e875c571062045",
                         "description": "",
-                        "strict": false,
-                        "subjective": false,
-                        "isShare": true,
                         "answer": [
                             {
                                 "mark": "A",
@@ -109,334 +120,27 @@
                                 "content": "5"
                             }
                         ],
-                        "expAbilities": [],
-                        "__v": 0,
                         "studentQA": [
                             {
                                 "stuAnswer": [
-                                    {
-                                        "mark": "D"
-                                    }
+                                    [
+                                        {
+                                            "mark": "A"
+                                        }
+                                    ]
                                 ],
                                 "_id": "67355fcf4cbf7d0020ec7b64",
                                 "question": "634d0ae3b2e875c571062045",
-                                "updatedAt": "2024-11-14T02:26:34.619Z",
-                                "score": 0
-                            }
-                        ]
-                    },
-                    {
-                        "knowledges": [
-                            "6407f9ff8269490025cdf487"
-                        ],
-                        "_id": "630c5ab468df5f18b1e5f0f2",
-                        "content": "<p>最长公共子序列算法利用的策略是（ ）。</p>",
-                        "difficulty": 1,
-                        "type": "单选",
-                        "creator": {
-                            "_id": "62ab03b15f7f551d0397ba16",
-                            "nickname": "陈维洋",
-                            "id": "62ab03b15f7f551d0397ba16"
-                        },
-                        "createdAt": "2022-08-29T06:20:36.775Z",
-                        "updatedAt": "2022-08-29T07:52:42.236Z",
-                        "id": "630c5ab468df5f18b1e5f0f2",
-                        "presetScore": 20,
-                        "index": 3,
-                        "groupName": 0,
-                        "question_id": "630c5ab468df5f18b1e5f0f2",
-                        "description": "",
-                        "strict": false,
-                        "subjective": false,
-                        "isShare": true,
-                        "answer": [
-                            {
-                                "mark": "A",
-                                "content": "<p>分支界限法</p>\n"
-                            },
-                            {
-                                "mark": "B",
-                                "content": "<p>动态规划法</p>\n"
-                            },
-                            {
-                                "mark": "C",
-                                "content": "<p>贪心法</p>\n"
-                            },
-                            {
-                                "mark": "D",
-                                "content": "<p>回溯法</p>\n"
-                            }
-                        ],
-                        "expAbilities": [],
-                        "__v": 3,
-                        "lastModifyBy": "612b83fb7087112fed855323",
-                        "studentQA": [
-                            {
-                                "stuAnswer": [
-                                    {
-                                        "mark": "B"
-                                    }
-                                ],
-                                "_id": "67355fe34cbf7d0020ec7b69",
-                                "question": "630c5ab468df5f18b1e5f0f2",
-                                "updatedAt": "2024-11-14T02:27:27.123Z",
-                                "score": 0
-                            }
-                        ]
-                    },
-                    {
-                        "knowledges": [
-                            "6407fa398269490025cdf4bd"
-                        ],
-                        "_id": "6191154d03c68501f61d439c",
-                        "title": "",
-                        "content": "<p>对于 0－1 背包问题和背包问题的解法，下面（ ）答案解释正确。</p>",
-                        "difficulty": 0,
-                        "type": "单选",
-                        "creator": {
-                            "_id": "612b83fb7087112fed855323",
-                            "nickname": "乔丽娟",
-                            "id": "612b83fb7087112fed855323"
-                        },
-                        "createdAt": "2021-11-14T13:55:25.625Z",
-                        "updatedAt": "2021-11-14T13:55:25.625Z",
-                        "id": "6191154d03c68501f61d439c",
-                        "presetScore": 20,
-                        "index": 4,
-                        "groupName": 0,
-                        "question_id": "6191154d03c68501f61d439c",
-                        "description": "",
-                        "strict": false,
-                        "subjective": false,
-                        "isShare": true,
-                        "answer": [
-                            {
-                                "mark": "A",
-                                "content": "<p>0－1 背包问题和背包问题都可用贪心算法求得最优解</p>\n"
-                            },
-                            {
-                                "mark": "B",
-                                "content": "<p>0－1 背包问题可用贪心算法求解，但背包问题则不能用贪心算法求解</p>\n"
-                            },
-                            {
-                                "mark": "C",
-                                "content": "<p>0－1 背包问题不能用贪心算法求最优解，但可以使用动态规划或搜索算法求解，而背包问题则可以用贪心算法求解</p>\n"
-                            },
-                            {
-                                "mark": "D",
-                                "content": "<p>因为 0－1 背包问题不具有最优子结构性质，所以不能用贪心算法求解</p>\n"
-                            }
-                        ],
-                        "expAbilities": [],
-                        "__v": 1,
-                        "lastModifyBy": "612b83fb7087112fed855323",
-                        "studentQA": [
-                            {
-                                "stuAnswer": [
-                                    {
-                                        "mark": "C"
-                                    }
-                                ],
-                                "_id": "673560114cbf7d0020ec7b6e",
-                                "question": "6191154d03c68501f61d439c",
-                                "updatedAt": "2024-11-14T02:27:33.576Z",
-                                "score": 0
-                            }
-                        ]
-                    },
-                    {
-                        "knowledges": [
-                            "6407f9ff8269490025cdf487",
-                            "6407f9ff8269490025cdf48e",
-                            "6407f9ff8269490025cdf492"
-                        ],
-                        "_id": "614838882a102f9339d24d71",
-                        "content": "<p>可用动态规划算法解决的问题需要满足几个基本要素，从下面选项中找出基本要素</p>",
-                        "difficulty": 3,
-                        "type": "多选",
-                        "creator": {
-                            "_id": "612b83fb7087112fed855323",
-                            "nickname": "乔丽娟",
-                            "id": "612b83fb7087112fed855323"
-                        },
-                        "createdAt": "2021-09-20T07:30:16.978Z",
-                        "updatedAt": "2021-09-28T12:26:34.421Z",
-                        "id": "614838882a102f9339d24d71",
-                        "presetScore": 20,
-                        "index": 5,
-                        "groupName": 1,
-                        "question_id": "614838882a102f9339d24d71",
-                        "description": "",
-                        "strict": false,
-                        "subjective": false,
-                        "isShare": true,
-                        "answer": [
-                            {
-                                "mark": "A",
-                                "content": "<p>阶段性</p>\n"
-                            },
-                            {
-                                "mark": "B",
-                                "content": "<p>重复子问题</p>\n"
-                            },
-                            {
-                                "mark": "C",
-                                "content": "<p>最优子结构</p>\n"
-                            },
-                            {
-                                "mark": "D",
-                                "content": "<p>无后向性</p>\n"
-                            }
-                        ],
-                        "expAbilities": [],
-                        "__v": 4,
-                        "lastModifyBy": "612b83fc7087112fed855343",
-                        "studentQA": [
-                            {
-                                "stuAnswer": [
-                                    {
-                                        "mark": "B"
-                                    },
-                                    {
-                                        "mark": "C"
-                                    }
-                                ],
-                                "_id": "673560184cbf7d0020ec7b70",
-                                "question": "614838882a102f9339d24d71",
-                                "updatedAt": "2024-11-14T02:28:01.818Z",
+                                "updatedAt": "2024-11-15T15:25:29.800Z",
                                 "score": 0
                             }
                         ]
                     }
-                ],
-                "questionsMeta": [
-                    {
-                        "knowledges": [
-                            {
-                                "_id": "635395de06d667f8a89ced6e",
-                                "kid": "100000000004427",
-                                "name": "动态规划法",
-                                "id": "635395de06d667f8a89ced6e"
-                            }
-                        ],
-                        "_id": "6191135703c68501f61d439b",
-                        "content": "动态规划算法中，最优子结构的性质是指         ",
-                        "difficulty": 0,
-                        "type": "单选",
-                        "creator": {
-                            "_id": "612b83fb7087112fed855323",
-                            "nickname": "乔丽娟",
-                            "id": "612b83fb7087112fed855323"
-                        },
-                        "createdAt": "2021-11-14T13:47:03.129Z",
-                        "updatedAt": "2022-10-22T07:04:01.328Z",
-                        "id": "6191135703c68501f61d439b",
-                        "presetScore": 20,
-                        "index": 1,
-                        "groupName": 0,
-                        "question_id": "6191135703c68501f61d439b",
-                        "description": ""
-                    },
-                    {
-                        "knowledges": [],
-                        "_id": "634d0ae3b2e875c571062045",
-                        "title": "",
-                        "content": "设有四个矩阵A,B,C,D，相邻两个矩阵之间是可乘的，它们按照ABCD的顺序进行矩阵连乘，通过不同的加括号的方式可以确定（ ）种不同的运算顺序。",
-                        "difficulty": 1,
-                        "type": "单选",
-                        "creator": {
-                            "_id": "62ab03b15f7f551d0397ba16",
-                            "nickname": "陈维洋",
-                            "id": "62ab03b15f7f551d0397ba16"
-                        },
-                        "createdAt": "2022-10-17T07:57:23.148Z",
-                        "updatedAt": "2022-10-17T07:57:23.148Z",
-                        "id": "634d0ae3b2e875c571062045",
-                        "presetScore": 20,
-                        "index": 2,
-                        "groupName": 0,
-                        "question_id": "634d0ae3b2e875c571062045",
-                        "description": ""
-                    },
-                    {
-                        "knowledges": [],
-                        "_id": "630c5ab468df5f18b1e5f0f2",
-                        "content": "最长公共子序列算法利用的策略是（ ）。",
-                        "difficulty": 1,
-                        "type": "单选",
-                        "creator": {
-                            "_id": "62ab03b15f7f551d0397ba16",
-                            "nickname": "陈维洋",
-                            "id": "62ab03b15f7f551d0397ba16"
-                        },
-                        "createdAt": "2022-08-29T06:20:36.775Z",
-                        "updatedAt": "2022-08-29T07:52:42.236Z",
-                        "id": "630c5ab468df5f18b1e5f0f2",
-                        "presetScore": 20,
-                        "index": 3,
-                        "groupName": 0,
-                        "question_id": "630c5ab468df5f18b1e5f0f2",
-                        "description": ""
-                    },
-                    {
-                        "knowledges": [],
-                        "_id": "6191154d03c68501f61d439c",
-                        "title": "",
-                        "content": "对于 0－1 背包问题和背包问题的解法，下面（ ）答案解释正确。",
-                        "difficulty": 0,
-                        "type": "单选",
-                        "creator": {
-                            "_id": "612b83fb7087112fed855323",
-                            "nickname": "乔丽娟",
-                            "id": "612b83fb7087112fed855323"
-                        },
-                        "createdAt": "2021-11-14T13:55:25.625Z",
-                        "updatedAt": "2021-11-14T13:55:25.625Z",
-                        "id": "6191154d03c68501f61d439c",
-                        "presetScore": 20,
-                        "index": 4,
-                        "groupName": 0,
-                        "question_id": "6191154d03c68501f61d439c",
-                        "description": ""
-                    },
-                    {
-                        "knowledges": [],
-                        "_id": "614838882a102f9339d24d71",
-                        "content": "3.可用动态规划算法解决的问题需要满足几个基本要素，从下面选项中找出基本要素\n",
-                        "difficulty": 0,
-                        "type": "多选",
-                        "creator": {
-                            "_id": "612b83fb7087112fed855323",
-                            "nickname": "乔丽娟",
-                            "id": "612b83fb7087112fed855323"
-                        },
-                        "createdAt": "2021-09-20T07:30:16.978Z",
-                        "updatedAt": "2021-09-28T12:26:34.421Z",
-                        "id": "614838882a102f9339d24d71",
-                        "presetScore": 20,
-                        "index": 5,
-                        "groupName": 1,
-                        "question_id": "614838882a102f9339d24d71",
-                        "description": ""
-                    }
-                ],
-                "_id": "6371fd4e9ccdff1242d98934"
+                ]
             }
         ],
-        "_id": "67315a31d2058e001e8fdf9e",
-        "title": "第8次课后作业",
-        "tcc": "66c92de770b3ec001e7cab3e",
-        "course": "60fcea30e77431038070866a",
-        "receiverType": "Classroom",
-        "receiver": "66d7cf3770b3ec001e7cac71",
-        "starttime": "2024-11-14T00:00:00.000Z",
-        "endtime": "2024-11-20T12:00:00.000Z",
-        "category": "课后作业",
-        "creator": "62ab03b15f7f551d0397ba16",
-        "createdAt": "2024-11-11T01:13:21.502Z",
-        "updatedAt": "2024-11-11T01:13:21.502Z",
-        "__v": 0,
-        "isEnd": false
+        "questionsMeta": [],
+        "_id": "6371fd4e9ccdff1242d98934"
     },
     "msg": "成功"
 }

@@ -74,6 +74,7 @@ def get_homework_score(token, homework_id):
     print(f"[+]开始获取作业得分")
     response = requests.get(url, headers={"Authorization": f"Bearer {token}"})
     response = response.json()
+    print(response)
     if response.get("code") == 2000:
         final_score = find_final_score(response, homework_id)
         print(f"[+]作业得分获取成功")
