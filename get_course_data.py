@@ -3,6 +3,7 @@ import json
 from get_token import get_token
 
 
+# 获取已加入的课程数据
 def fetch_course_data(token):
     try:
         api_url = "https://v2.api.z-xin.net/stu/course/getJoinedCourse2"
