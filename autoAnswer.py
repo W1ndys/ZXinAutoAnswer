@@ -107,6 +107,10 @@ def submit_homework(token, homework_id, question_id, questionSet_id):
         print("[-] 无法获取初始分数，提交失败")
         return None
 
+    if last_score == 100:
+        print(f"[+]题目【{question_id}】已获得满分，跳过爆破")
+        return None
+
     url = "https://v2.api.z-xin.net/stu/question/answerForQuestion"
 
     options = [
@@ -193,15 +197,29 @@ if __name__ == "__main__":
                         question["_id"],
                         questionSet_id,
                     )
-                    answer_list.append(answer)
-                    print(
-                        f"[+]题目【{question['content'][:15]}...】爆破成功，答案: {answer}"
-                    )
+                    if answer is None:
+                        print(
+                            "[-]爆破失败，作业可能已经满分，请清空作业提交或随意作答将分数拉低（尽量清零）后重试"
+                        )
+                        break
+                    if answer:
+                        answer_list.append(answer)
+                        print(
+                            f"[+]题目【{question['content'][:15]}...】爆破成功，答案: {answer}"
+                        )
+                    else:
+                        print(f"[-]题目【{question['content'][:15]}...】爆破结束")
 
                 print("--------------------------------")
                 print(
-                    f"[+]爆破【{course_name}】的【{homework_title}】作业成功，答案: {answer_list}"
+                    f"[+]爆破【{course_name}】的【{homework_title}】作业结束，答案: {answer_list}"
                 )
                 print("--------------------------------")
+            else:
+                print("[-]题目内容获取失败")
+                print("--------------------------------")
+        else:
+            print("[-]作业id获取失败")
+            print("--------------------------------")
     else:
         print("[-]token授权失败")
