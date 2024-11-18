@@ -29,7 +29,7 @@ def get_homework_id(token, course_name, homework_title):
         print("[+]课程数据获取成功")
         save_course_data_to_json(course_data)
         print(f"[+]开始寻找【{course_name}】的【{homework_title}】的作业ID")
-        for course in course_data["data"]:
+        for course in course_data.get("data", []):
             for homework in course["homework"]:
                 if homework["title"] == homework_title:
                     print(f"[+]找到作业ID: {homework['_id']}")
@@ -60,14 +60,16 @@ def get_question_data(token, homework_id):
 
 # 遍历数据以查找目标_id的finalScore
 def find_final_score(course_data, homework_id):
+    final_score = None  # 初始化
     for course in course_data.get("data", []):
         for homework in course.get("homework", []):
-            for student_homework in homework.get("studenthomework", []):
-                if student_homework.get("homework") == homework_id:
-                    return student_homework.get("finalScore")
-                else:
-                    print(f"[-]未找到作业【{homework_id}】的得分")
-                    return None
+            if homework["_id"] == homework_id:
+                # 提取分数
+                for student_work in homework.get("studenthomework", []):
+                    final_score = student_work.get("finalScore", None)
+                    if final_score is not None:  # 提前退出
+                        return final_score
+    return final_score
 
 
 # 获取作业得分
@@ -80,8 +82,8 @@ def get_homework_score(token, homework_id):
             print(f"[+]作业得分获取成功，作业【{homework_id}】得分: {final_score}")
             return final_score
         else:
-            print(f"[-]作业【{homework_id}】得分获取失败")
-            return None
+            print(f"[-]作业【{homework_id}】得分为0")
+            return 0
     else:
         print(f"[-]作业得分获取失败")
         return None
@@ -89,21 +91,24 @@ def get_homework_score(token, homework_id):
 
 # 获取questionSet_id
 def get_questionSet_id(question_data):
-    return question_data["questionSets"][0]["_id"]
+    question_sets = question_data.get("questionSets", [])
+    if not question_sets:
+        raise ValueError("No questionSets found in the data.")
+    return question_sets[0]["_id"]
 
 
 # 提交作业并输出爆破出该题目的正确答案
 def submit_homework(token, homework_id, question_id, questionSet_id):
-    # 记录本次作业上一次的分数
+
+    # 获取作业已获得分数
     last_score = get_homework_score(token, homework_id)
 
-    # 如果分数获取失败，则退出
-    if not last_score:
+    if last_score is None:
+        print("[-] 无法获取初始分数，提交失败")
         return None
 
     url = "https://v2.api.z-xin.net/stu/question/answerForQuestion"
 
-    # 定义选项列表
     options = [
         "A",
         "B",
@@ -120,10 +125,12 @@ def submit_homework(token, homework_id, question_id, questionSet_id):
         "ACD",
         "BCD",
         "ABCD",
+        # 下面是判断题
+        "T",  # 对
+        "F",  # 错
     ]
 
     for option in options:
-        # 使用列表推导式将当前选项转化为 mark 数组
         stuAnswer = [{"mark": char} for char in option]
 
         requests.post(
@@ -137,30 +144,37 @@ def submit_homework(token, homework_id, question_id, questionSet_id):
             },
         )
 
-        print(
-            f"[+]正在爆破【{homework_id}】作业的题目【{question_id}】，选项: {option}"
-        )
+        print(f"[+]提交答案: {option}")
 
-        # 获取本次提交后该作业的分数
         score = get_homework_score(token, homework_id)
 
-        if score and score > last_score:
-            last_score = score
-            print(f"[+]题目【{question_id}】爆破成功，答案: {option}")
-            break
+        if score is None:
+            print("[-] 无法获取分数，提交失败")
+            return None
 
-    return option
+        if score > last_score:
+            print(f"[+] 答案爆破成功，选项: {option}")
+            return option
+
+    return None
 
 
 if __name__ == "__main__":
+
     username, password, course_name, homework_title = read_config()
+
     print("[+]开始获取token")
     token = get_token(username, password)
+
+    if not token or not isinstance(token, str):
+        print("[-] Token 无效，请检查账号或密码。")
+        exit(1)
+
     if token:
         print("[+]token授权成功")
         homework_id = get_homework_id(token, course_name, homework_title)
         if homework_id:
-            print(f"[+]获取{homework_title}的作业id成功，作业id: {homework_id}")
+            print(f"[+]获取【{homework_title}】的作业id成功，作业id: 【{homework_id}】")
             print("--------------------------------")
             question_data = get_question_data(token, homework_id)
             questionSet_id = get_questionSet_id(question_data)
@@ -172,7 +186,7 @@ if __name__ == "__main__":
                 print("--------------------------------")
                 answer_list = []
                 for question in question_data["questionSets"][0]["questions"]:
-                    print(f"[+]开始爆破题目【{question['content']}】")
+                    print(f"[+]开始爆破题目【{question['content'][:15]}...】")
                     answer = submit_homework(
                         token,
                         homework_id,
@@ -180,14 +194,14 @@ if __name__ == "__main__":
                         questionSet_id,
                     )
                     answer_list.append(answer)
-                    print(f"[+]题目【{question['content']}】爆破成功，答案: {answer}")
+                    print(
+                        f"[+]题目【{question['content'][:15]}...】爆破成功，答案: {answer}"
+                    )
 
                 print("--------------------------------")
                 print(
                     f"[+]爆破【{course_name}】的【{homework_title}】作业成功，答案: {answer_list}"
                 )
-                print("--------------------------------")
-                print(f"[+]爆破【{course_name}】的【{homework_title}】作业结束")
                 print("--------------------------------")
     else:
         print("[-]token授权失败")
