@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 from get_token import get_token
 
 
@@ -20,10 +21,13 @@ def fetch_course_data(token):
 
 
 def save_course_data_to_json(course_data):
+    # 检查并创建目录
+    os.makedirs("output", exist_ok=True)
+    PATH = os.path.join("output", "course_data.json")
     # 把数据直接保存到文件
-    with open("course_data.json", "w", encoding="utf-8") as file:
+    with open(PATH, "w", encoding="utf-8") as file:
         json.dump(course_data, file, ensure_ascii=False, indent=4)
-    print("[+]保存数据成功，数据已保存到 course_data.json 文件中")
+    print(f"[+]保存数据成功，数据已保存到 {PATH} 文件中")
 
 
 def process_course_data(course_data):
@@ -50,10 +54,12 @@ def process_course_data(course_data):
                     else:
                         data += "暂未作答，无相关数据\n"
                     data += "----------------------------------------------------------------\n"
-
-            with open("course_data.txt", "w", encoding="utf-8") as file:
+            # 检查并创建目录
+            os.makedirs("output", exist_ok=True)
+            PATH = os.path.join("output", "course_data.txt")
+            with open(PATH, "w", encoding="utf-8") as file:
                 file.write(data)
-            print("[+]课程数据解析完成，结果已保存到 course_data.txt 文件中")
+            print(f"[+]课程数据解析完成，结果已保存到 {PATH} 文件中")
             print("[+]课程数据程序运行结束")
         else:
             print("[-]课程数据获取失败")
