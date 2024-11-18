@@ -488,14 +488,14 @@
                             "_id": "67355fc04cbf7d0020ec7b5c",
                             "answerProgress": 1,
                             "correctProgress": 1,
-                            "finalScore": 100,
+                            "finalScore": 0,
                             "homework": "67315a31d2058e001e8fdf9e",
                             "tcc": "66c92de770b3ec001e7cab3e",
                             "homeworkCategory": "课后作业",
                             "student": "63185998fa845f1bd09e21e8",
-                            "lastAnswerTime": "2024-11-18T03:05:19.884Z",
+                            "lastAnswerTime": "2024-11-18T03:34:30.393Z",
                             "createdAt": "2024-11-14T02:26:08.441Z",
-                            "updatedAt": "2024-11-18T03:05:19.885Z",
+                            "updatedAt": "2024-11-18T03:34:30.394Z",
                             "__v": 0
                         }
                     ]
