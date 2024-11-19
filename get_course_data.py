@@ -27,15 +27,15 @@ def save_course_data_to_json(course_data):
     # 把数据直接保存到文件
     with open(PATH, "w", encoding="utf-8") as file:
         json.dump(course_data, file, ensure_ascii=False, indent=4)
-    print(f"[+]保存数据成功，数据已保存到 {PATH} 文件中")
+    print(f"[+] 保存数据成功，数据已保存到 {PATH} 文件中")
 
 
 def process_course_data(course_data):
     if course_data:
         save_course_data_to_json(course_data)
         if course_data["msg"] == "成功":
-            print("[+]数据获取成功")
-            print("[+]即将开始解析数据")
+            print("[+] 数据获取成功")
+            print("[+] 即将开始解析数据")
             data = ""
             # 解析数据
             for course in course_data["data"]:
@@ -59,8 +59,8 @@ def process_course_data(course_data):
             PATH = os.path.join("output", "course_data.txt")
             with open(PATH, "w", encoding="utf-8") as file:
                 file.write(data)
-            print(f"[+]课程数据解析完成，结果已保存到 {PATH} 文件中")
-            print("[+]课程数据程序运行结束")
+            print(f"[+] 课程数据解析完成，结果已保存到 {PATH} 文件中")
+            print("[+] 课程数据程序运行结束")
         else:
             print("[-]课程数据获取失败")
     print("--------------------------------")
@@ -72,7 +72,7 @@ def read_user_info(token):
     response = requests.get(url, headers={"Authorization": f"Bearer {token}"})
     response = response.json()
     if response.get("code") == 2000:
-        print("[+]用户信息获取成功")
+        print("[+] 用户信息获取成功")
         data = response.get("data", {})
 
         # 提取用户基本信息
@@ -108,20 +108,20 @@ def read_user_info(token):
         )
         grade = student_info.get("grade", "获取失败")
         # 打印提取的信息
-        print(f"[+]用户名: {username}")
-        print(f"[+]昵称: {nickname}")
-        print(f"[+]邮箱: {email}")
-        print(f"[+]性别: {sex}")
-        print(f"[+]用户类型: {userType}")
-        print(f"[+]学院名称: {college_name}")
-        print(f"[+]地址: {address}")
-        print(f"[+]城市: {city}")
-        print(f"[+]区: {district}")
-        print(f"[+]位置类型: {location_type}")
-        print(f"[+]位置坐标: {location_coordinates}")
-        print(f"[+]宿舍名称: {dormitory_bname}")
-        print(f"[+]班级名称: {student_joinedClassrooms_name}")
-        print(f"[+]年级: {grade}")
+        print(f"[+] 用户名: {username}")
+        print(f"[+] 昵称: {nickname}")
+        print(f"[+] 邮箱: {email}")
+        print(f"[+] 性别: {sex}")
+        print(f"[+] 用户类型: {userType}")
+        print(f"[+] 学院名称: {college_name}")
+        print(f"[+] 地址: {address}")
+        print(f"[+] 城市: {city}")
+        print(f"[+] 区: {district}")
+        print(f"[+] 位置类型: {location_type}")
+        print(f"[+] 位置坐标: {location_coordinates}")
+        print(f"[+] 宿舍名称: {dormitory_bname}")
+        print(f"[+] 班级名称: {student_joinedClassrooms_name}")
+        print(f"[+] 年级: {grade}")
     else:
         print("[-] 获取用户信息失败")
     print("--------------------------------")
@@ -133,9 +133,9 @@ def read_config():
         config = json.load(config_file)
         username = config["username"]
         password = config["password"]
-        print("[+]读取账号密码成功")
-        print("[+]账号：" + username)
-        print("[+]密码：" + password)
+        print("[+] 读取账号密码成功")
+        print("[+] 账号：" + username)
+        print("[+] 密码：" + password)
         print("--------------------------------")
         return username, password
 

@@ -21,9 +21,9 @@ def get_token(username, password):
         code = response["code"]
         msg = response["msg"]
         if code == 2000:
-            print("[+]登录成功")
+            print("[+] 登录成功")
             token = response["data"]["token"]
-            print("[+]获取token成功")
+            print("[+] 获取token成功")
             print("--------------------------------")
             return token
         else:

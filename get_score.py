@@ -24,11 +24,11 @@ def process_course_scores(course_data):  # 修改函数名
         # 把数据直接保存到文件
         with open("course_data.json", "w", encoding="utf-8") as file:
             json.dump(course_data, file, ensure_ascii=False, indent=4)
-        print("[+]读取成绩数据成功，数据已保存到 course_data.json 文件中")
+        print("[+] 读取成绩数据成功，数据已保存到 course_data.json 文件中")
 
         if course_data["msg"] == "成功":
-            print("[+]成绩数据获取成功")
-            print("[+]即将开始解析成绩数据")
+            print("[+] 成绩数据获取成功")
+            print("[+] 即将开始解析成绩数据")
             data = ""
             # 解析数据
             for course in course_data["data"]:
@@ -48,8 +48,8 @@ def process_course_scores(course_data):  # 修改函数名
             PATH = os.path.join("output", "score_info.txt")
             with open(PATH, "w", encoding="utf-8") as file:  # 修改文件名
                 file.write(data)
-            print(f"[+]成绩数据解析完成，结果已保存到 {PATH} 文件中")
-            print("[+]成绩数据程序运行结束")
+            print(f"[+] 成绩数据解析完成，结果已保存到 {PATH} 文件中")
+            print("[+] 成绩数据程序运行结束")
             print("--------------------------------")
             print("Power by W1ndys")
             print("https://github.com/W1ndys")
@@ -64,9 +64,9 @@ def read_config():
         username = config["username"]
         password = config["password"]
         print("--------------------------------")
-        print("[+]读取账号密码成功")
-        print("[+]账号：" + username)
-        print("[+]密码：" + password)
+        print("[+] 读取账号密码成功")
+        print("[+] 账号：" + username)
+        print("[+] 密码：" + password)
         return username, password
 
 
