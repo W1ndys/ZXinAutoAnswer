@@ -177,19 +177,26 @@ def reset_homework_score(token, homework_id, question_data):
                 "stuAnswer": [{"mark": "Z"}],  # 假设"Z"是一个错误答案
             },
         )
-    print("[+] 作业分数已清零")
+    if get_homework_score(token, homework_id) == 0:
+        print("[+] 作业分数已清零")
+    else:
+        print("[-] 作业分数清零失败")
+        print("[-] 程序退出")
+        exit(0)
 
 
 if __name__ == "__main__":
 
     username, password, course_name, homework_title = read_config()
 
-    print("\n[+] 开始获取token")
+    print("[+] 开始获取token")
     token = get_token(username, password)
 
     if not token or not isinstance(token, str):
         print("[-] Token 无效，请检查账号或密码。")
-        exit(1)
+        print("-" * 40)
+        print("[-] 程序退出")
+        exit(0)
 
     if token:
         print("[+] token授权成功")
@@ -243,3 +250,6 @@ if __name__ == "__main__":
             print("-" * 40)
     else:
         print("[-] token授权失败")
+        print("-" * 40)
+        print("[-] 程序退出")
+        exit(0)
