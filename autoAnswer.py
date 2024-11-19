@@ -93,7 +93,7 @@ def get_homework_score(token, homework_id):
 def get_questionSet_id(question_data):
     question_sets = question_data.get("questionSets", [])
     if not question_sets:
-        raise ValueError("No questionSets found in the data.")
+        raise ValueError("数据中未找到questionSets。")
     return question_sets[0]["_id"]
 
 
@@ -163,6 +163,25 @@ def submit_homework(token, homework_id, question_id, questionSet_id):
     return None
 
 
+# 清零作业分数
+def reset_homework_score(token, homework_id, question_data):
+    print("[+] 开始清零作业分数")
+    questionSet_id = get_questionSet_id(question_data)
+    for question in question_data["questionSets"][0]["questions"]:
+        # 提交一个错误答案以清零分数
+        requests.post(
+            "https://v2.api.z-xin.net/stu/question/answerForQuestion",
+            headers={"Authorization": f"Bearer {token}"},
+            json={
+                "question_id": question["_id"],
+                "homework_id": homework_id,
+                "questionSet_id": questionSet_id,
+                "stuAnswer": [{"mark": "Z"}],  # 假设"Z"是一个错误答案
+            },
+        )
+    print("[+] 作业分数已清零")
+
+
 if __name__ == "__main__":
 
     username, password, course_name, homework_title = read_config()
@@ -183,6 +202,8 @@ if __name__ == "__main__":
             question_data = get_question_data(token, homework_id)
             questionSet_id = get_questionSet_id(question_data)
             if question_data:
+                # 清零作业分数
+                reset_homework_score(token, homework_id, question_data)
                 print("--------------------------------")
                 print(f"[+]获取作业【{homework_id}】的题目内容成功")
                 print("--------------------------------")
@@ -190,7 +211,9 @@ if __name__ == "__main__":
                 print("--------------------------------")
                 answer_list = []
                 for question in question_data["questionSets"][0]["questions"]:
-                    print(f"[+]开始爆破题目【{question['content'][:15]}...】")
+                    print(
+                        f"[+]开始爆破题目【{question['content'][:15]}...】题目ID：{question["_id"]}"
+                    )
                     answer = submit_homework(
                         token,
                         homework_id,
