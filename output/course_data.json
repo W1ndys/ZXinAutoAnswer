@@ -501,6 +501,54 @@
                     ]
                 },
                 {
+                    "_id": "674eb413d2058e001e8ff290",
+                    "control": 0,
+                    "isShowScores": false,
+                    "isShowScoreAfterEndtime": false,
+                    "isShowAnswerAfterEndtime": false,
+                    "isShowKnowledge": false,
+                    "questionSets": [
+                        "674eb344d2058e001e8ff28f"
+                    ],
+                    "title": "网安班大作业2024",
+                    "tcc": "66c92de770b3ec001e7cab3e",
+                    "course": "60fcea30e77431038070866a",
+                    "receiverType": "Classroom",
+                    "receiver": "66d7cf3770b3ec001e7cac71",
+                    "starttime": "2024-12-12T02:00:00.000Z",
+                    "endtime": "2024-12-26T12:00:00.000Z",
+                    "category": "课后作业",
+                    "creator": "62ab03b15f7f551d0397ba16",
+                    "createdAt": "2024-12-03T07:32:35.615Z",
+                    "updatedAt": "2024-12-03T07:32:35.615Z",
+                    "__v": 0,
+                    "studenthomework": []
+                },
+                {
+                    "_id": "67527053d2058e001e8ff351",
+                    "control": 0,
+                    "isShowScores": false,
+                    "isShowScoreAfterEndtime": false,
+                    "isShowAnswerAfterEndtime": false,
+                    "isShowKnowledge": false,
+                    "questionSets": [
+                        "638f2ca5de8a08bd0f92c476"
+                    ],
+                    "title": "第9次课后作业",
+                    "tcc": "66c92de770b3ec001e7cab3e",
+                    "course": "60fcea30e77431038070866a",
+                    "receiverType": "Classroom",
+                    "receiver": "66d7cf3770b3ec001e7cac71",
+                    "starttime": "2024-12-12T00:00:00.000Z",
+                    "endtime": "2024-12-18T12:00:00.000Z",
+                    "category": "课后作业",
+                    "creator": "62ab03b15f7f551d0397ba16",
+                    "createdAt": "2024-12-06T03:32:35.314Z",
+                    "updatedAt": "2024-12-06T03:32:35.314Z",
+                    "__v": 0,
+                    "studenthomework": []
+                },
+                {
                     "_id": "671eddb670b3ec001e7cbfac",
                     "control": 0,
                     "isShowScores": false,
@@ -1341,16 +1389,16 @@
                     "studenthomework": [
                         {
                             "_id": "6742bd234cbf7d0020ed7501",
-                            "answerProgress": 0.33,
+                            "answerProgress": 0.67,
                             "correctProgress": 0,
                             "finalScore": 0,
                             "homework": "673fe0b5d2058e001e8fe379",
                             "tcc": "66c9c6f770b3ec001e7cab44",
                             "homeworkCategory": "课程实验",
                             "student": "63185998fa845f1bd09e21e8",
-                            "lastAnswerTime": "2024-11-24T08:30:06.791Z",
+                            "lastAnswerTime": "2024-12-02T16:12:44.545Z",
                             "createdAt": "2024-11-24T05:44:03.504Z",
-                            "updatedAt": "2024-11-24T08:30:06.792Z",
+                            "updatedAt": "2024-12-02T16:12:44.547Z",
                             "__v": 0
                         }
                     ]
@@ -1685,6 +1733,45 @@
                     "studenthomework": []
                 },
                 {
+                    "_id": "67551be5d2058e001e8ff387",
+                    "control": 0,
+                    "isShowScores": false,
+                    "isShowScoreAfterEndtime": false,
+                    "isShowAnswerAfterEndtime": false,
+                    "isShowKnowledge": false,
+                    "questionSets": [
+                        "67551bcfd2058e001e8ff386"
+                    ],
+                    "title": "课后练习",
+                    "tcc": "66d3cae170b3ec001e7cabd8",
+                    "course": "60fcea30e774310380708664",
+                    "receiverType": "Classroom",
+                    "receiver": "66d51b2570b3ec001e7cac05",
+                    "starttime": "2024-12-08T04:08:00.000Z",
+                    "endtime": "2024-12-23T16:00:00.000Z",
+                    "category": "课后作业",
+                    "creator": "612b83f97087112fed855307",
+                    "createdAt": "2024-12-08T04:09:09.696Z",
+                    "updatedAt": "2024-12-08T04:09:09.696Z",
+                    "__v": 0,
+                    "studenthomework": [
+                        {
+                            "_id": "675653064cbf7d0020eecb1f",
+                            "answerProgress": 1,
+                            "correctProgress": 1,
+                            "finalScore": 100,
+                            "homework": "67551be5d2058e001e8ff387",
+                            "tcc": "66d3cae170b3ec001e7cabd8",
+                            "homeworkCategory": "课后作业",
+                            "student": "63185998fa845f1bd09e21e8",
+                            "lastAnswerTime": "2024-12-09T02:19:36.440Z",
+                            "createdAt": "2024-12-09T02:16:38.666Z",
+                            "updatedAt": "2024-12-09T02:19:36.440Z",
+                            "__v": 0
+                        }
+                    ]
+                },
+                {
                     "_id": "66d51ba370b3ec001e7cac06",
                     "control": 0,
                     "isShowScores": false,
@@ -1700,11 +1787,11 @@
                     "receiverType": "Classroom",
                     "receiver": "66d51b2570b3ec001e7cac05",
                     "starttime": "2024-09-02T01:57:00.000Z",
-                    "endtime": "2025-01-02T16:00:00.000Z",
+                    "endtime": "2024-12-24T16:00:00.000Z",
                     "category": "课程实验",
                     "creator": "612b83f97087112fed855307",
                     "createdAt": "2024-09-02T01:57:55.970Z",
-                    "updatedAt": "2024-10-27T00:44:33.185Z",
+                    "updatedAt": "2024-12-09T03:43:02.477Z",
                     "__v": 0,
                     "studenthomework": [
                         {
@@ -1739,11 +1826,11 @@
                     "receiverType": "Classroom",
                     "receiver": "66d51b2570b3ec001e7cac05",
                     "starttime": "2024-09-13T02:32:00.000Z",
-                    "endtime": "2025-01-02T16:00:00.000Z",
+                    "endtime": "2024-12-24T16:00:00.000Z",
                     "category": "课程实验",
                     "creator": "612b83f97087112fed855307",
                     "createdAt": "2024-09-13T02:33:01.271Z",
-                    "updatedAt": "2024-10-27T00:44:18.725Z",
+                    "updatedAt": "2024-12-09T03:43:11.329Z",
                     "__v": 0,
                     "studenthomework": [
                         {
@@ -1778,11 +1865,11 @@
                     "receiverType": "Classroom",
                     "receiver": "66d51b2570b3ec001e7cac05",
                     "starttime": "2024-09-28T03:06:00.000Z",
-                    "endtime": "2025-01-02T16:00:00.000Z",
+                    "endtime": "2024-12-24T16:00:00.000Z",
                     "category": "课程实验",
                     "creator": "612b83f97087112fed855307",
                     "createdAt": "2024-09-28T03:06:37.685Z",
-                    "updatedAt": "2024-10-27T00:44:02.609Z",
+                    "updatedAt": "2024-12-09T03:43:19.617Z",
                     "__v": 0,
                     "studenthomework": [
                         {
@@ -1817,11 +1904,11 @@
                     "receiverType": "Classroom",
                     "receiver": "66d51b2570b3ec001e7cac05",
                     "starttime": "2024-10-12T01:54:00.000Z",
-                    "endtime": "2025-01-02T16:00:00.000Z",
+                    "endtime": "2024-12-24T16:00:00.000Z",
                     "category": "课程实验",
                     "creator": "612b83f97087112fed855307",
                     "createdAt": "2024-10-12T01:54:38.758Z",
-                    "updatedAt": "2024-10-27T00:43:45.926Z",
+                    "updatedAt": "2024-12-09T03:43:27.191Z",
                     "__v": 0,
                     "studenthomework": [
                         {
@@ -1856,11 +1943,11 @@
                     "receiverType": "Classroom",
                     "receiver": "66d51b2570b3ec001e7cac05",
                     "starttime": "2024-10-27T00:42:00.000Z",
-                    "endtime": "2025-01-02T16:00:00.000Z",
+                    "endtime": "2024-12-24T16:00:00.000Z",
                     "category": "课程实验",
                     "creator": "612b83f97087112fed855307",
                     "createdAt": "2024-10-27T00:43:33.838Z",
-                    "updatedAt": "2024-10-27T00:43:33.838Z",
+                    "updatedAt": "2024-12-09T03:43:34.232Z",
                     "__v": 0,
                     "studenthomework": [
                         {
@@ -1895,11 +1982,11 @@
                     "receiverType": "Classroom",
                     "receiver": "66d51b2570b3ec001e7cac05",
                     "starttime": "2024-11-10T05:24:00.000Z",
-                    "endtime": "2024-12-30T16:00:00.000Z",
+                    "endtime": "2024-12-24T16:00:00.000Z",
                     "category": "课程实验",
                     "creator": "612b83f97087112fed855307",
                     "createdAt": "2024-11-10T05:24:36.602Z",
-                    "updatedAt": "2024-11-10T05:24:36.602Z",
+                    "updatedAt": "2024-12-09T03:42:50.788Z",
                     "__v": 0,
                     "studenthomework": [
                         {
@@ -1934,11 +2021,11 @@
                     "receiverType": "Classroom",
                     "receiver": "66d51b2570b3ec001e7cac05",
                     "starttime": "2024-11-23T11:50:00.000Z",
-                    "endtime": "2024-12-30T16:00:00.000Z",
+                    "endtime": "2024-12-24T16:00:00.000Z",
                     "category": "课程实验",
                     "creator": "612b83f97087112fed855307",
                     "createdAt": "2024-11-23T11:50:39.031Z",
-                    "updatedAt": "2024-11-23T11:50:39.031Z",
+                    "updatedAt": "2024-12-09T03:42:41.695Z",
                     "__v": 0,
                     "studenthomework": [
                         {
@@ -1953,6 +2040,45 @@
                             "lastAnswerTime": "2024-11-24T08:25:16.870Z",
                             "createdAt": "2024-11-24T08:25:16.218Z",
                             "updatedAt": "2024-11-24T08:25:16.872Z",
+                            "__v": 0
+                        }
+                    ]
+                },
+                {
+                    "_id": "6755081ed2058e001e8ff373",
+                    "control": 0,
+                    "isShowScores": false,
+                    "isShowScoreAfterEndtime": false,
+                    "isShowAnswerAfterEndtime": false,
+                    "isShowKnowledge": false,
+                    "questionSets": [
+                        "675507f2d2058e001e8ff372"
+                    ],
+                    "title": "实验八",
+                    "tcc": "66d3cae170b3ec001e7cabd8",
+                    "course": "60fcea30e774310380708664",
+                    "receiverType": "Classroom",
+                    "receiver": "66d51b2570b3ec001e7cac05",
+                    "starttime": "2024-12-08T02:44:00.000Z",
+                    "endtime": "2024-12-24T16:00:00.000Z",
+                    "category": "课程实验",
+                    "creator": "612b83f97087112fed855307",
+                    "createdAt": "2024-12-08T02:44:46.170Z",
+                    "updatedAt": "2024-12-08T02:44:46.170Z",
+                    "__v": 0,
+                    "studenthomework": [
+                        {
+                            "_id": "67565a2a4cbf7d0020eecd58",
+                            "answerProgress": 1,
+                            "correctProgress": 1,
+                            "finalScore": 99,
+                            "homework": "6755081ed2058e001e8ff373",
+                            "tcc": "66d3cae170b3ec001e7cabd8",
+                            "homeworkCategory": "课程实验",
+                            "student": "63185998fa845f1bd09e21e8",
+                            "lastAnswerTime": "2024-12-09T02:47:07.531Z",
+                            "createdAt": "2024-12-09T02:47:06.947Z",
+                            "updatedAt": "2024-12-09T03:40:32.416Z",
                             "__v": 0
                         }
                     ]
@@ -2099,6 +2225,30 @@
                             "__v": 0
                         }
                     ]
+                },
+                {
+                    "_id": "67563705d2058e001e8ff3b0",
+                    "control": 0,
+                    "isShowScores": false,
+                    "isShowScoreAfterEndtime": false,
+                    "isShowAnswerAfterEndtime": false,
+                    "isShowKnowledge": false,
+                    "questionSets": [
+                        "675636e6d2058e001e8ff3af"
+                    ],
+                    "title": "作业四",
+                    "tcc": "66f2574370b3ec001e7cb4f5",
+                    "course": "60fcea30e774310380708671",
+                    "receiverType": "Classroom",
+                    "receiver": "66f2586370b3ec001e7cb4f7",
+                    "starttime": "2024-12-09T00:16:00.000Z",
+                    "endtime": "2024-12-23T16:00:00.000Z",
+                    "category": "课后作业",
+                    "creator": "612b83fc7087112fed85533b",
+                    "createdAt": "2024-12-09T00:17:09.381Z",
+                    "updatedAt": "2024-12-09T00:17:09.381Z",
+                    "__v": 0,
+                    "studenthomework": []
                 },
                 {
                     "_id": "66f258d570b3ec001e7cb4f8",
@@ -2388,6 +2538,42 @@
                     ]
                 }
             ]
+        },
+        {
+            "_id": "67481a4ad2058e001e8fedf0",
+            "teacher": {
+                "user": {
+                    "nickname": "相青",
+                    "avatar": "https://cyberdownload.anrunlu.net/20210065-1696754792299"
+                }
+            },
+            "classroom": [
+                "67481ab6d2058e001e8fedf1",
+                "67481b07d2058e001e8fedf2",
+                "67481b36d2058e001e8fedf3",
+                "674880efd2058e001e8fee4d",
+                "67488110d2058e001e8fee4e",
+                "67488123d2058e001e8fee4f",
+                "6748813ed2058e001e8fee50",
+                "6748815ad2058e001e8fee51",
+                "6748816fd2058e001e8fee52",
+                "6748818ed2058e001e8fee53",
+                "674881a8d2058e001e8fee54"
+            ],
+            "course": {
+                "_id": "65079be49d0baf0013e9af44",
+                "knowledges": [],
+                "expAbilities": [],
+                "creator": "60f4e184507ff40aea0936e8",
+                "college": "60f4e0e0444fd518df90f200",
+                "cid": "20230909",
+                "name": "日常管理",
+                "createdAt": "2023-09-18T00:37:56.413Z",
+                "updatedAt": "2023-09-18T00:37:56.413Z",
+                "__v": 0
+            },
+            "term": "6687b29df92bd60018b65f36",
+            "homework": []
         }
     ],
     "msg": "成功"
