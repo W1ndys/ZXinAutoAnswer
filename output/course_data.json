@@ -532,9 +532,9 @@
                             "tcc": "66c92de770b3ec001e7cab3e",
                             "homeworkCategory": "课后作业",
                             "student": "63185998fa845f1bd09e21e8",
-                            "lastAnswerTime": "2024-12-21T08:25:10.489Z",
+                            "lastAnswerTime": "2024-12-23T08:41:07.199Z",
                             "createdAt": "2024-12-21T08:24:07.691Z",
-                            "updatedAt": "2024-12-21T08:25:10.491Z",
+                            "updatedAt": "2024-12-23T08:41:07.200Z",
                             "__v": 0
                         }
                     ]
@@ -628,15 +628,15 @@
                         {
                             "_id": "6722f7cfeab7f5001f05779e",
                             "answerProgress": 1,
-                            "correctProgress": 0,
-                            "finalScore": 0,
+                            "correctProgress": 1,
+                            "finalScore": 90,
                             "homework": "671eddb670b3ec001e7cbfac",
                             "tcc": "66c92de770b3ec001e7cab3e",
                             "homeworkCategory": "课程实验",
                             "student": "63185998fa845f1bd09e21e8",
                             "lastAnswerTime": "2024-10-31T03:21:51.190Z",
                             "createdAt": "2024-10-31T03:21:51.063Z",
-                            "updatedAt": "2024-10-31T03:21:51.192Z",
+                            "updatedAt": "2024-12-23T08:30:07.093Z",
                             "__v": 0
                         }
                     ]
@@ -1802,11 +1802,11 @@
                     "receiverType": "Classroom",
                     "receiver": "66d51b2570b3ec001e7cac05",
                     "starttime": "2024-11-24T03:03:00.000Z",
-                    "endtime": "2024-12-30T16:00:00.000Z",
+                    "endtime": "2024-12-27T16:00:00.000Z",
                     "category": "课后作业",
                     "creator": "612b83f97087112fed855307",
                     "createdAt": "2024-11-24T03:03:44.617Z",
-                    "updatedAt": "2024-11-24T03:03:44.617Z",
+                    "updatedAt": "2024-12-23T01:39:12.568Z",
                     "__v": 0,
                     "studenthomework": [
                         {
@@ -1818,9 +1818,9 @@
                             "tcc": "66d3cae170b3ec001e7cabd8",
                             "homeworkCategory": "课后作业",
                             "student": "63185998fa845f1bd09e21e8",
-                            "lastAnswerTime": "2024-12-23T00:57:57.398Z",
+                            "lastAnswerTime": "2024-12-23T10:31:14.767Z",
                             "createdAt": "2024-12-21T08:23:39.371Z",
-                            "updatedAt": "2024-12-23T00:57:57.400Z",
+                            "updatedAt": "2024-12-23T10:31:14.768Z",
                             "__v": 0
                         }
                     ]
@@ -1891,14 +1891,14 @@
                             "_id": "6768a9384cbf7d0020efec37",
                             "answerProgress": 1,
                             "correctProgress": 0.8,
-                            "finalScore": 24,
+                            "finalScore": 40,
                             "homework": "6768a8a3d2058e001e8ff793",
                             "tcc": "66d3cae170b3ec001e7cabd8",
                             "homeworkCategory": "课后作业",
                             "student": "63185998fa845f1bd09e21e8",
-                            "lastAnswerTime": "2024-12-23T01:03:45.664Z",
+                            "lastAnswerTime": "2024-12-23T01:10:37.351Z",
                             "createdAt": "2024-12-23T00:05:12.307Z",
-                            "updatedAt": "2024-12-23T01:03:45.666Z",
+                            "updatedAt": "2024-12-23T01:10:37.352Z",
                             "__v": 0
                         }
                     ]
@@ -2007,15 +2007,15 @@
                         {
                             "_id": "67161aa0eab7f5001f044e08",
                             "answerProgress": 1,
-                            "correctProgress": 0,
-                            "finalScore": 0,
+                            "correctProgress": 1,
+                            "finalScore": 100,
                             "homework": "66f772bd70b3ec001e7cb739",
                             "tcc": "66d3cae170b3ec001e7cabd8",
                             "homeworkCategory": "课程实验",
                             "student": "63185998fa845f1bd09e21e8",
                             "lastAnswerTime": "2024-10-21T09:10:57.685Z",
                             "createdAt": "2024-10-21T09:10:56.747Z",
-                            "updatedAt": "2024-10-21T09:10:57.688Z",
+                            "updatedAt": "2024-12-23T01:14:47.171Z",
                             "__v": 0
                         }
                     ]

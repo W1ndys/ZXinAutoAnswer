@@ -53,8 +53,13 @@ def get_question_data(token, homework_id):
     if response.get("code") == 2000:
         print(f"[+] 作业ID【{homework_id}】内容获取成功")
         return response.get("data")
+    elif response.get("code") == 403:
+        print(f"[-] 作业ID【{homework_id}】内容获取失败")
+        print(f"[-] 相应信息: {response}")
+        return None
     else:
         print(f"[-] 作业ID【{homework_id}】内容获取失败")
+        print(f"[-] 相应信息: {response}")
         return None
 
 
@@ -228,6 +233,11 @@ if __name__ == "__main__":
             )
             print("-" * 40)
             question_data = get_question_data(token, homework_id)
+            if not question_data:
+                print("[-] 题目内容获取失败")
+                print("-" * 40)
+                print("[-] 程序退出")
+                exit(0)
             questionSet_id = get_questionSet_id(question_data)
             if question_data:
                 reset_homework_score(token, homework_id, question_data)
@@ -242,7 +252,9 @@ if __name__ == "__main__":
                         f"[+] 开始爆破题目【{question['content'][:15]}...】题目ID：{question['_id']}"
                     )
                     if question["type"] not in ["单选", "多选", "判断"]:
-                        print(f"[-] 题目【{question['content'][:15]}...】类型为{question['type']}，跳过")
+                        print(
+                            f"[-] 题目【{question['content'][:15]}...】类型为{question['type']}，跳过"
+                        )
                         continue
                     answer = submit_homework(
                         token, homework_id, question["_id"], questionSet_id
