@@ -532,9 +532,9 @@
                             "tcc": "66c92de770b3ec001e7cab3e",
                             "homeworkCategory": "课后作业",
                             "student": "63185998fa845f1bd09e21e8",
-                            "lastAnswerTime": "2024-12-21T08:25:10.489Z",
+                            "lastAnswerTime": "2024-12-23T08:41:07.199Z",
                             "createdAt": "2024-12-21T08:24:07.691Z",
-                            "updatedAt": "2024-12-21T08:25:10.491Z",
+                            "updatedAt": "2024-12-23T08:41:07.200Z",
                             "__v": 0
                         }
                     ]
@@ -600,7 +600,22 @@
                     "createdAt": "2024-12-17T02:14:23.036Z",
                     "updatedAt": "2024-12-17T02:14:23.036Z",
                     "__v": 0,
-                    "studenthomework": []
+                    "studenthomework": [
+                        {
+                            "_id": "676cbc1a4cbf7d0020f06063",
+                            "answerProgress": 1,
+                            "correctProgress": 1,
+                            "finalScore": 100,
+                            "homework": "6760de7fd2058e001e8ff64e",
+                            "tcc": "66c92de770b3ec001e7cab3e",
+                            "homeworkCategory": "课后作业",
+                            "student": "63185998fa845f1bd09e21e8",
+                            "lastAnswerTime": "2024-12-26T02:15:13.957Z",
+                            "createdAt": "2024-12-26T02:14:50.386Z",
+                            "updatedAt": "2024-12-26T02:15:13.957Z",
+                            "__v": 0
+                        }
+                    ]
                 },
                 {
                     "_id": "671eddb670b3ec001e7cbfac",
@@ -628,15 +643,15 @@
                         {
                             "_id": "6722f7cfeab7f5001f05779e",
                             "answerProgress": 1,
-                            "correctProgress": 0,
-                            "finalScore": 0,
+                            "correctProgress": 1,
+                            "finalScore": 90,
                             "homework": "671eddb670b3ec001e7cbfac",
                             "tcc": "66c92de770b3ec001e7cab3e",
                             "homeworkCategory": "课程实验",
                             "student": "63185998fa845f1bd09e21e8",
                             "lastAnswerTime": "2024-10-31T03:21:51.190Z",
                             "createdAt": "2024-10-31T03:21:51.063Z",
-                            "updatedAt": "2024-10-31T03:21:51.192Z",
+                            "updatedAt": "2024-12-23T08:30:07.093Z",
                             "__v": 0
                         }
                     ]
@@ -1802,11 +1817,11 @@
                     "receiverType": "Classroom",
                     "receiver": "66d51b2570b3ec001e7cac05",
                     "starttime": "2024-11-24T03:03:00.000Z",
-                    "endtime": "2024-12-30T16:00:00.000Z",
+                    "endtime": "2024-12-27T16:00:00.000Z",
                     "category": "课后作业",
                     "creator": "612b83f97087112fed855307",
                     "createdAt": "2024-11-24T03:03:44.617Z",
-                    "updatedAt": "2024-11-24T03:03:44.617Z",
+                    "updatedAt": "2024-12-23T01:39:12.568Z",
                     "__v": 0,
                     "studenthomework": [
                         {
@@ -1818,9 +1833,9 @@
                             "tcc": "66d3cae170b3ec001e7cabd8",
                             "homeworkCategory": "课后作业",
                             "student": "63185998fa845f1bd09e21e8",
-                            "lastAnswerTime": "2024-12-23T00:57:57.398Z",
+                            "lastAnswerTime": "2024-12-23T10:31:14.767Z",
                             "createdAt": "2024-12-21T08:23:39.371Z",
-                            "updatedAt": "2024-12-23T00:57:57.400Z",
+                            "updatedAt": "2024-12-23T10:31:14.768Z",
                             "__v": 0
                         }
                     ]
@@ -2554,7 +2569,46 @@
                     ]
                 },
                 {
-                    "_id": "6731e88bd2058e001e8fdfe7",
+                    "_id": "676a2665d2058e001e8fff1b",
+                    "control": 0,
+                    "isShowScores": false,
+                    "isShowScoreAfterEndtime": false,
+                    "isShowAnswerAfterEndtime": false,
+                    "isShowKnowledge": false,
+                    "questionSets": [
+                        "645996c06a1e02001fec188e"
+                    ],
+                    "title": "实验6：脚本PHP的SQL注入防护实验",
+                    "tcc": "66f2574370b3ec001e7cb4f5",
+                    "course": "60fcea30e774310380708671",
+                    "receiverType": "Classroom",
+                    "receiver": "66f2586370b3ec001e7cb4f7",
+                    "starttime": "2024-12-24T03:11:00.000Z",
+                    "endtime": "2024-12-27T16:00:00.000Z",
+                    "category": "课程实验",
+                    "creator": "612b83fc7087112fed85533b",
+                    "createdAt": "2024-12-24T03:11:33.362Z",
+                    "updatedAt": "2024-12-24T03:11:33.362Z",
+                    "__v": 0,
+                    "studenthomework": [
+                        {
+                            "_id": "676c34c04cbf7d0020f05b9f",
+                            "answerProgress": 1,
+                            "correctProgress": 0,
+                            "finalScore": 0,
+                            "homework": "676a2665d2058e001e8fff1b",
+                            "tcc": "66f2574370b3ec001e7cb4f5",
+                            "homeworkCategory": "课程实验",
+                            "student": "63185998fa845f1bd09e21e8",
+                            "lastAnswerTime": "2024-12-25T16:37:21.271Z",
+                            "createdAt": "2024-12-25T16:37:20.219Z",
+                            "updatedAt": "2024-12-25T16:37:21.273Z",
+                            "__v": 0
+                        }
+                    ]
+                },
+                {
+                    "_id": "676a26d8d2058e001e8fff1c",
                     "control": 0,
                     "isShowScores": false,
                     "isShowScoreAfterEndtime": false,
@@ -2563,31 +2617,31 @@
                     "questionSets": [
                         "644478bb04277c001fc1b63a"
                     ],
-                    "title": "实验五",
+                    "title": "实验五 UDP Flood 攻击",
                     "tcc": "66f2574370b3ec001e7cb4f5",
                     "course": "60fcea30e774310380708671",
                     "receiverType": "Classroom",
                     "receiver": "66f2586370b3ec001e7cb4f7",
-                    "starttime": "2024-11-11T11:20:00.000Z",
-                    "endtime": "2025-11-10T16:00:00.000Z",
+                    "starttime": "2024-12-24T03:13:00.000Z",
+                    "endtime": "2024-12-27T16:00:00.000Z",
                     "category": "课程实验",
                     "creator": "612b83fc7087112fed85533b",
-                    "createdAt": "2024-11-11T11:20:43.859Z",
-                    "updatedAt": "2024-11-11T11:20:43.859Z",
+                    "createdAt": "2024-12-24T03:13:28.269Z",
+                    "updatedAt": "2024-12-24T03:13:28.269Z",
                     "__v": 0,
                     "studenthomework": [
                         {
-                            "_id": "6732fd0b4cbf7d0020ec3f55",
+                            "_id": "676a27264cbf7d0020f00e20",
                             "answerProgress": 1,
                             "correctProgress": 0,
                             "finalScore": 0,
-                            "homework": "6731e88bd2058e001e8fdfe7",
+                            "homework": "676a26d8d2058e001e8fff1c",
                             "tcc": "66f2574370b3ec001e7cb4f5",
                             "homeworkCategory": "课程实验",
                             "student": "63185998fa845f1bd09e21e8",
-                            "lastAnswerTime": "2024-11-12T07:00:28.604Z",
-                            "createdAt": "2024-11-12T07:00:27.771Z",
-                            "updatedAt": "2024-11-12T07:00:28.606Z",
+                            "lastAnswerTime": "2024-12-24T03:14:48.151Z",
+                            "createdAt": "2024-12-24T03:14:46.459Z",
+                            "updatedAt": "2024-12-24T03:14:48.153Z",
                             "__v": 0
                         }
                     ]

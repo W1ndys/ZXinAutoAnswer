@@ -2554,7 +2554,46 @@
                     ]
                 },
                 {
-                    "_id": "6731e88bd2058e001e8fdfe7",
+                    "_id": "676a2665d2058e001e8fff1b",
+                    "control": 0,
+                    "isShowScores": false,
+                    "isShowScoreAfterEndtime": false,
+                    "isShowAnswerAfterEndtime": false,
+                    "isShowKnowledge": false,
+                    "questionSets": [
+                        "645996c06a1e02001fec188e"
+                    ],
+                    "title": "实验6：脚本PHP的SQL注入防护实验",
+                    "tcc": "66f2574370b3ec001e7cb4f5",
+                    "course": "60fcea30e774310380708671",
+                    "receiverType": "Classroom",
+                    "receiver": "66f2586370b3ec001e7cb4f7",
+                    "starttime": "2024-12-24T03:11:00.000Z",
+                    "endtime": "2024-12-27T16:00:00.000Z",
+                    "category": "课程实验",
+                    "creator": "612b83fc7087112fed85533b",
+                    "createdAt": "2024-12-24T03:11:33.362Z",
+                    "updatedAt": "2024-12-24T03:11:33.362Z",
+                    "__v": 0,
+                    "studenthomework": [
+                        {
+                            "_id": "676c34c04cbf7d0020f05b9f",
+                            "answerProgress": 1,
+                            "correctProgress": 0,
+                            "finalScore": 0,
+                            "homework": "676a2665d2058e001e8fff1b",
+                            "tcc": "66f2574370b3ec001e7cb4f5",
+                            "homeworkCategory": "课程实验",
+                            "student": "63185998fa845f1bd09e21e8",
+                            "lastAnswerTime": "2024-12-25T16:37:21.271Z",
+                            "createdAt": "2024-12-25T16:37:20.219Z",
+                            "updatedAt": "2024-12-25T16:37:21.273Z",
+                            "__v": 0
+                        }
+                    ]
+                },
+                {
+                    "_id": "676a26d8d2058e001e8fff1c",
                     "control": 0,
                     "isShowScores": false,
                     "isShowScoreAfterEndtime": false,
@@ -2563,31 +2602,31 @@
                     "questionSets": [
                         "644478bb04277c001fc1b63a"
                     ],
-                    "title": "实验五",
+                    "title": "实验五 UDP Flood 攻击",
                     "tcc": "66f2574370b3ec001e7cb4f5",
                     "course": "60fcea30e774310380708671",
                     "receiverType": "Classroom",
                     "receiver": "66f2586370b3ec001e7cb4f7",
-                    "starttime": "2024-11-11T11:20:00.000Z",
-                    "endtime": "2025-11-10T16:00:00.000Z",
+                    "starttime": "2024-12-24T03:13:00.000Z",
+                    "endtime": "2024-12-27T16:00:00.000Z",
                     "category": "课程实验",
                     "creator": "612b83fc7087112fed85533b",
-                    "createdAt": "2024-11-11T11:20:43.859Z",
-                    "updatedAt": "2024-11-11T11:20:43.859Z",
+                    "createdAt": "2024-12-24T03:13:28.269Z",
+                    "updatedAt": "2024-12-24T03:13:28.269Z",
                     "__v": 0,
                     "studenthomework": [
                         {
-                            "_id": "6732fd0b4cbf7d0020ec3f55",
+                            "_id": "676a27264cbf7d0020f00e20",
                             "answerProgress": 1,
                             "correctProgress": 0,
                             "finalScore": 0,
-                            "homework": "6731e88bd2058e001e8fdfe7",
+                            "homework": "676a26d8d2058e001e8fff1c",
                             "tcc": "66f2574370b3ec001e7cb4f5",
                             "homeworkCategory": "课程实验",
                             "student": "63185998fa845f1bd09e21e8",
-                            "lastAnswerTime": "2024-11-12T07:00:28.604Z",
-                            "createdAt": "2024-11-12T07:00:27.771Z",
-                            "updatedAt": "2024-11-12T07:00:28.606Z",
+                            "lastAnswerTime": "2024-12-24T03:14:48.151Z",
+                            "createdAt": "2024-12-24T03:14:46.459Z",
+                            "updatedAt": "2024-12-24T03:14:48.153Z",
                             "__v": 0
                         }
                     ]
