@@ -600,7 +600,22 @@
                     "createdAt": "2024-12-17T02:14:23.036Z",
                     "updatedAt": "2024-12-17T02:14:23.036Z",
                     "__v": 0,
-                    "studenthomework": []
+                    "studenthomework": [
+                        {
+                            "_id": "676cbc1a4cbf7d0020f06063",
+                            "answerProgress": 1,
+                            "correctProgress": 1,
+                            "finalScore": 100,
+                            "homework": "6760de7fd2058e001e8ff64e",
+                            "tcc": "66c92de770b3ec001e7cab3e",
+                            "homeworkCategory": "课后作业",
+                            "student": "63185998fa845f1bd09e21e8",
+                            "lastAnswerTime": "2024-12-26T02:15:13.957Z",
+                            "createdAt": "2024-12-26T02:14:50.386Z",
+                            "updatedAt": "2024-12-26T02:15:13.957Z",
+                            "__v": 0
+                        }
+                    ]
                 },
                 {
                     "_id": "671eddb670b3ec001e7cbfac",
